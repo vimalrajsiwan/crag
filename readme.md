@@ -100,4 +100,4 @@ added.
 
 ## pkg install
 
-uv add langchain langgraph dotenv
+uv add langchain langgraph python-dotenv beautifulsoup4 langchainhub langchain-community tavily-python langchain-chroma black isort pytest langchain-unstructured langchain-text-splitters
