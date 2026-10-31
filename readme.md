@@ -100,4 +100,12 @@ added.
 
 ## pkg install
 
-uv add langchain langgraph python-dotenv beautifulsoup4 langchainhub langchain-community tavily-python langchain-chroma black isort pytest langchain-unstructured langchain-text-splitters
+uv add langchain langgraph langchain-openai python-dotenv beautifulsoup4 langchainhub langchain-community tavily-python langchain-chroma black isort pytest langchain-unstructured langchain-text-splitters
+
+## ToRun Test Files
+
+uv run pytest src/graph/chains/test/test_chains.py
+
+## To Run Python File
+
+uv run main.py

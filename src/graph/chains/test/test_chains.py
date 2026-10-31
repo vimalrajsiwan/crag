@@ -10,7 +10,7 @@ def test_retrieval_grader_answer_yes() -> None:
     question ="agent memory"
 
     docs = retriever.invoke(question)
-    doc_txt = docs[0].page_content
+    doc_txt = "\n\n".join(doc.page_content for doc in docs)
 
     res: GradeDocuments = retrieval_grader.invoke(
         {
