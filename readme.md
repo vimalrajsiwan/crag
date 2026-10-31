@@ -104,7 +104,7 @@ uv add langchain langgraph langchain-openai python-dotenv beautifulsoup4 langcha
 
 ## ToRun Test Files
 
-uv run pytest src/graph/chains/test/test_chains.py
+uv run pytest .\src\graph\chains\test\test_chains.py -v
 
 ## To Run Python File
 
