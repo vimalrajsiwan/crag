@@ -20,3 +20,18 @@ def test_retrieval_grader_answer_yes() -> None:
     )
 
     assert res.binary_score == "yes"
+
+def test_retrieval_grader_answer_no() -> None:
+    question ="agent memory"
+
+    docs = retriever.invoke(question)
+    doc_txt = "\n\n".join(doc.page_content for doc in docs)
+
+    res: GradeDocuments = retrieval_grader.invoke(
+        {
+            "question": "what is pizza",
+            "documents": doc_txt
+        }
+    )
+
+    assert res.binary_score == "no"
